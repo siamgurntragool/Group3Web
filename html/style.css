@@ -1,0 +1,125 @@
+
+
+
+/* สไตล์พื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* เพิ่มพื้นที่ด้านบนให้กับเนื้อหา */
+}
+
+/* การตั้งค่าหัวข้อ */
+h1, h2 {
+    color: #005baa; /* ใช้สีฟ้าของทหาร */
+    margin-bottom: 20px;
+}
+
+/* เมนูนำทาง */
+header nav {
+    background-color: #003366; /* สีพื้นหลังเมนู */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #005baa; /* สีพื้นหลังเมื่อวางเมาส์ */
+    border-radius: 5px;
+}
+
+/* เนื้อหาหลัก */
+.about-us {
+    background-color: white;
+    padding: 40px 20px;
+    margin-top: 80px; /* เพิ่มพื้นที่ด้านบนเพื่อไม่ให้ทับกับเมนู */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-us h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-us ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* ปรับปรุงส่วนท้าย */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer a {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* สไตล์สำหรับอุปกรณ์มือถือ */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
